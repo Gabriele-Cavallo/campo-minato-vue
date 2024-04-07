@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: lightseagreen;
+    color: white;
+}
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* #region GENERAL */
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.jst-cntr{
+    justify-content: center;
+}
+.algn-cntr{
+    align-items: center;
+}
+.spc-btwn{
+    justify-content: space-between;
+}
+.logo{
+    max-height: 100px;
+}
+img{
+    max-width: 100%;
+}
+.grid-container{
+    position: relative;
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.pointer{
+    cursor: pointer;
+}
+.fa-skull-crossbones{
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/* #endregion GENERAL */
+
+/* #region GRID MENU'*/
+.grid-menu{
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+.counter-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.score{
+    color: darkred;
+    font-size: 30px;
+    font-weight: bold;
+}
+.counter{
+    color: yellow;
+    font-size: 25px;
+    background-color: grey;
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+select{
+    text-align: center;
+    font-size: 16px;
+}
+/* #endregion GRID MENU'*/
+
+/* #region GRID */
+.grid{
+    height: 1000px;
+    width: 1000px;
+    background-color: grey;
+    border: 2px solid black;
+    align-content: flex-start;
+    background-image: url(../img/eyepatch.png);
+    background-size: contain;
+}
+.box{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: lightskyblue;
+    color: black;
+}
+.box *{
+    background-color: lightskyblue;
+}
+.explosed{
+    background-color: red;
+}
+.safe{
+    background-color: lightgreen;
+}
+.safe *{
+    background-color: lightgreen;
+}
+.explosed *{
+    background-color: red;
+    color: black;
+    font-size: 50px;
+}
+.box-100{
+    width: 10%;
+    height: 10%;
+}
+.box-81{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+.box-49{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+/* #endregion GRID */
+
